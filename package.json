@@ -2,7 +2,7 @@
   "name": "asp-easy",
   "displayName": "ASP_Easy",
   "description": "Extension for easy use of the ASP programming language.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.76.0"
   },
