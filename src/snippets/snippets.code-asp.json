@@ -1,0 +1,132 @@
+{
+	"Funcao incompleta": {
+		"prefix": "!functionempty",
+		"body": [
+			"Function NameFunction(param)",
+			"       '..........'",
+			"End Function"
+		],
+		"description": "Cria uma funcao vazia sem os fechamentos em ASP"
+	},
+	"Funcao completa": {
+		"prefix": "!function",
+		"body": [
+			"<%",
+			"Function NameFunction(param)",
+			"     '..........'",
+			"End Function",
+			"%>"
+		],
+		"description": "Cria uma funcao vazia com os fechamentos em ASP"
+	},
+	"Sub-rotinas incompleta": {
+		"prefix": "!subempty",
+		"body": [
+			"Sub NameSubroutines",
+			"      '..........'",
+			"End Sub"
+		],
+		"description": "Cria uma sub-rotina vazia sem os fechamentos em ASP"
+	},
+	"Sub-rotinas completa": {
+		"prefix": "!sub",
+		"body": [
+			"<%",
+			"Sub NameSubroutines",
+			"'..........'",
+			"End Sub",
+			"%>"
+		],
+		"description": "Cria uma sub-rotina vazia com os fechamentos em ASP"
+	},
+	"Condicional Simples": {
+		"prefix": "!ifelse",
+		"body": [
+			"If variavel Then",
+			"'..........'",
+			"Else",
+			"'..........'",
+			"End If"
+		],
+		"description": "Cria um condicional simples sem variaveis."
+	},
+	"Condicional com else if": {
+		"prefix": "!elseif",
+		"body": [
+			"If variavel Then",
+			"'..........'",
+			"ElseIf variavel2 Then",
+			"'..........'",
+			"Else",
+			"'..........'",
+			"End If"
+		],
+		"description": "Cria um condicional com ElseIf."
+	},
+	"Criando Case": {
+		"prefix": "!case",
+		"body": [
+			"Select Case variavel",
+			"       Case 1",
+			"             '..........'",
+			"       Case 2",
+			"             '..........'",
+			"       Case 3",
+			"             '..........'",
+			"       Case else",
+			"             '..........'",
+			"End Select"
+		],
+		"description": "Cria um Select case."
+	},
+	"Criando For": {
+		"prefix": "!for",
+		"body": [
+			"For i = 0 To [valor]",
+			"    '..........'",
+			"Next"
+		],
+		"description": "Cria um For."
+	},
+	"Criando For com Step": {
+		"prefix": "!forstep",
+		"body": [
+			"For i=2 To [valor] Step 2",
+			"    '..........'",
+			"Next"
+		],
+		"description": "Cria um For com step."
+	},
+	"Criando For Each": {
+		"prefix": "!foreach",
+		"body": [
+			"For Each x In [valor]",
+			"    '..........'",
+			"Next"
+		],
+		"description": "Cria um For Each."
+	},
+	"Criando Do While": {
+		"prefix": "!foreach",
+		"body": [
+			"Do While i>10",
+			"    '..........'",
+			"Loop"
+		],
+		"description": "Cria um Do While."
+	},
+	"Criando include virtual": {
+		"prefix": "!includev",
+		"body": [
+			"<!--#include virtual=''-->"
+		],
+		"description": "Cria um include virtual."
+	},
+	"Criando include file": {
+		"prefix": "!includef",
+		"body": [
+			"<!--#include file=''-->"
+		],
+		"description": "Cria um include file."
+	}
+}

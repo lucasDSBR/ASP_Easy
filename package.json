@@ -1,0 +1,98 @@
+{
+  "name": "asp-easy",
+  "displayName": "ASP_Easy",
+  "description": "Extension for easy use of the ASP programming language.",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "publisher": "lucasmaciel6690",
+  "icon": "images/logo.png",
+  "categories": [
+    "Other",
+	"Snippets"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+	"configuration": {
+		"title": "Zero Reference configuration",
+		"properties": {
+		  "zeroReference.useCodeLens": {
+			"type": "boolean",
+			"default": true,
+			"description": "Use CodeLens for displaying entries with no references"
+		  }
+		}
+	},
+	"languages": [
+		{
+			"id": "asp",
+			"configuration": "./asp.configuration.json",
+			"aliases": [
+				"ASP",
+				"asp"
+			],
+			"extensions": [
+				".asa",
+				".asp"
+			]
+		}
+	],
+    "commands": [
+      {
+        "command": "asp-easy.asp-easy-start",
+        "title": "ASP_Easy"
+      }
+    ],
+	"grammars": [
+		{
+			"language": "asp",
+			"scopeName": "text.html.asp",
+			"path": "./syntaxe/asp-syntaxe.json",
+			"embeddedLanguages": {
+				"text.html.asp": "asp",
+				"text.html": "html",
+				"source.sql": "sql",
+				"text.xml": "xml",
+				"source.js": "javascript",
+				"source.vbs": "vbscript",
+				"source.json": "json",
+				"source.css": "css"
+			}
+		}
+	],
+    "snippets": [
+		{
+			"language": "asp",
+			"scopeName": "text.html.asp",
+			"path": "./src/snippets/snippets.code-asp.json"
+		}
+	]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.76.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "@vscode/test-electron": "^2.2.3",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5",
+	"snippets": "^0.0.6"
+  },
+  "dependencies": {
+    "snippets": "^0.0.6"
+  }
+}

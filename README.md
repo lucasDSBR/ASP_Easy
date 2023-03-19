@@ -1,2 +1,5 @@
 # ASP_Easy
-ExtensÃ£o para Visual Studio Code para agilizar o desenvolvimento de aplicaÃ§Ãµes desenvolvidas em ASP
+A extensão "ASP Easy" foi desenvolvida com o intuito de agilisar o desenvolvimento de aplicações desenvolvidas em ASP.
+## Desenvolvedor
+	Lucas S. Maciel
+	lucasmaciel6690@gmail.com
