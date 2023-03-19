@@ -1,5 +1,5 @@
 # ASP_Easy
-A extensão "ASP Easy" foi desenvolvida com o intuito de agilisar o desenvolvimento de aplicações desenvolvidas em ASP.
+A extensÃ£o "ASP Easy" foi desenvolvida com o intuito de agilisar o desenvolvimento de aplicaÃ§Ãµes desenvolvidas em ASP.
 ## Desenvolvedor
-	Lucas S. Maciel
+	Lucas S. M.
 	lucasmaciel6690@gmail.com
